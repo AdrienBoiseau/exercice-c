@@ -12,7 +12,7 @@
 #include "horloge.h"
 #include "bonjour.h"
 #include "heure.h"
-
+#include "valeurgrande.h"
 
 
 int main (void) {
@@ -22,9 +22,14 @@ int main (void) {
     //nombre();
     //grand();
     //banque();
-    seconde();
+    //seconde();
     //horloge();
     //bonjour();
     //heure();
-    
+    //valeur();
+    //randomm();
+    //exo();
+    //exosix();
+    //exosept();
+    table();
 }

@@ -29,26 +29,26 @@ int horloge (void) {
         heurefinal=heure+1;
         seconde=00;
         minute=00;
-        printf("L'heure est : %.2fh",heurefinal);
-        printf("%.2fm",minute);
-        printf("%.2fs\n",seconde);
+        printf("L'heure est : %.0fh",heurefinal);
+        printf("%.0fm",minute);
+        printf("%.0fs\n",seconde);
     }
     else if (seconde==59 && heure!=23) {
         heurefinal=heure;
         seconde=00;
         minute=minute+1;
-        printf("L'heure est : %.2fh",heurefinal);
-        printf("%.2fm",minute);
-        printf("%.2fs\n",seconde);
+        printf("L'heure est : %.0fh",heurefinal);
+        printf("%.0fm",minute);
+        printf("%.0fs\n",seconde);
     }
     
     else if (heure<24 && minute<60 && seconde<59){
         heurefinal=heure;
         seconde=seconde+1;
         minute=minute;
-        printf("L'heure est : %.2fh",heurefinal);
-        printf("%.2fm",minute);
-        printf("%.2fs\n",seconde);
+        printf("L'heure est : %.0fh",heurefinal);
+        printf("%.0fm",minute);
+        printf("%.0fs\n",seconde);
     }
     else if (heure>23) {
         printf ("Erreur\n");
@@ -58,9 +58,9 @@ int horloge (void) {
         heurefinal=00;
         seconde=00;
         minute=00;
-        printf("L'heure est : %.2fh",heurefinal);
-        printf("%.2fm",minute);
-        printf("%.2fs\n",seconde);
+        printf("L'heure est : %.0fh",heurefinal);
+        printf("%.0fm",minute);
+        printf("%.0fs\n",seconde);
     }
     
     return 0;
